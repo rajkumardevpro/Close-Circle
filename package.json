@@ -1,0 +1,22 @@
+{
+  "name": "closecircle",
+  "version": "1.0.0",
+  "description": "Private Instagram-like social app for up to 20 invite-only people — posts, stories, DMs + group chat with photo/video",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.1",
+    "socket.io": "^4.8.1"
+  }
+}

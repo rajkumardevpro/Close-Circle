@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: closecircle
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: INVITE_CODE
+        value: FRIENDS20
+      - key: MAX_USERS
+        value: 20
+      - key: JWT_SECRET
+        generateValue: true
+      - key: UPLOAD_DIR
+        value: /opt/render/project/src/data/uploads
+    disk:
+      name: closecircle-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
