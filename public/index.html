@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>CloseCircle — Private for our 20</title>
+<meta name="description" content="Private Instagram-like app for 20 invite-only people. Posts, stories, chats."/>
+<meta name="theme-color" content="#0b0b10"/>
+<link rel="manifest" href="/manifest.webmanifest"/>
+<link rel="icon" href="/icons/icon-192.png"/>
+<link rel="apple-touch-icon" href="/icons/icon-192.png"/>
+<link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+<div id="app"></div>
+<input id="filePicker" type="file" accept="image/*,video/*" hidden/>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/app.js"></script>
+<script>
+if ('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+</script>
+</body>
+</html>

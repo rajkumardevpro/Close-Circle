@@ -1,0 +1,9 @@
+{
+  "appId": "com.yourname.closecircle",
+  "appName": "CloseCircle",
+  "webDir": "public",
+  "server": {
+    "url": "https://YOUR-SERVER-URL",
+    "cleartext": false
+  }
+}
